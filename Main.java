@@ -13,6 +13,30 @@ public class Main {
     // create a scanner for user input
     Scanner input = new Scanner(System.in);
 
+    // Switch case example
+    // get the user choice between 1 and 5
+    System.out.println("Please make a selection (1-5)");
+    int choice = input.nextInt();
+
+    // gets rid of the enter key so we can get Strings doesnt like when goes from numbers to words
+    input.nextLine();
+
+    // determine which candy to draw by using a switch case
+    switch(choice){
+    case 1: 
+      System.out.println("Here is your choclate bar");
+      break;
+    case 2:
+      System.out.println("Here are your Skittles");
+      break;
+    case 3: 
+      System.out.println("Here are your M&Ms");
+      break;
+    default:
+      System.out.println("Invalid choice");
+    }
+
+    // Nested loop example
     // ask the user if the animal has feathers
     System.out.println("Does the animal have fethers? (yes/no)");
     String featherAnswer = input.nextLine();
